@@ -7,13 +7,11 @@ namespace GitTest
 {
     interface IAnimal
     {
-        string name;
-        bool amIFurry;
-        int toughness;
+        string name{get; set;}
+        bool amIFurry { get; set; }
+        int toughness { get; set; }
 
-        public void speak(string userName)
-        {
-            Console.WriteLine("I'm a {0}, and my toughness level is {1}. Your name is {2}",name, toughness,userName);
-        }
+        void speak(string userName);
+        
     }
 }
